@@ -3,13 +3,13 @@
 #include <time.h>
 
 /**
- * main - Entry point for random number generation
- * create int for last digit and print output
+ * main -Entry point for two intergers, generating random numbers and
+ * last digit of random numbers then print it.
  *
  * Return: Always zero (Success)
  */
-
 int main(void)
+
 {
 	int n, last_digit;
 
@@ -19,18 +19,18 @@ int main(void)
 
 	if (last_digit > 5)
 	{
-		printf("Last digit of %d is %d and is greater than 5\n", n, last_digit);
+		printf("Last digit of %d is %d and is greater than 5\n",
+				n, last_digit);
 	}
-	if ((last_digit < 6) && (!0))
+	else if (last_digit == 0)
+	{
+		printf("Last digit of %d is %d and is 0\n", n, last_digit);
+	}
+	else
 	{
 		printf("Last digit of %d is %d and is less than 6 and not 0\n",
 				n, last_digit);
 	}
-	if (last_digit == 0)
-	{
-		printf("Last digit of %d is %d and is 0\n", n, last_digit);
-	}
-
 
 	return (0);
 }

@@ -17,7 +17,7 @@ int main(void)
 			{
 				putchar(x);
 				putchar(y);
-					if ((x < 57) || (y < 58))
+					if ((x < 56) || (y < 57))
 					{
 						putchar(44);
 						putchar(32);

@@ -14,9 +14,9 @@ int main(void)
 
 	for (x = 48; x < 58; x++)
 	{
-		for (y = 49; y < 57; y++)
+		for (y = 49; y < 58; y++)
 		{
-			for (z = 50; z < 56; z++)
+			for (z = 50; z < 58; z++)
 			{
 				if ((x < y) && (y < z))
 				{
@@ -24,7 +24,7 @@ int main(void)
 					putchar(y);
 					putchar(z);
 
-					if (((x < 56) && (y < 57)) || (z < 58))
+					if (x < 55 || y < 56 || z < 57)
 					{
 						putchar(44);
 						putchar(32);

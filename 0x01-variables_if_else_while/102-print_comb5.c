@@ -11,24 +11,24 @@ int main(void)
 {
 	int  x, y;
 
-	for (x = 48; x < 58; x++)
+	for (x = 0; x < 100; x++)
 	{
-		for (y = 49; y < 58; y++)
+		for (y = 0; y < 100; y++)
 		{
 
-			if (x < y && x != y)
+			if (x < y)
 			{
-				putchar(x);
-				putchar(x);
-				putchar(32);
-				putchar(x);
-				putchar(y);
+				putchar((x / 10) + 48);
+				putchar((x % 10) + 48);
+				putchar(' ');
+				putchar((y / 10) + 48);
+				putchar((y % 10) + 48);
 
 
-				if (x < 56 || y < 57)
+				if (x < 98 || y < 99)
 				{
-					putchar(44);
-					putchar(32);
+					putchar(',');
+					putchar(' ');
 				}
 			}
 		}

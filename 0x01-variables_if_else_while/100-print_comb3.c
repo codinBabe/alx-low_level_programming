@@ -11,13 +11,13 @@ int main(void)
 
 	for (x = 48; x < 58; x++)
 	{
-		for (y = 49; y < 57; y++)
+		for (y = 49; y < 58; y++)
 		{
 			if (y > x)
 			{
 				putchar(x);
 				putchar(y);
-					if ((x < 56) || (y < 57))
+					if ((x < 57) || (y < 58))
 					{
 						putchar(44);
 						putchar(32);

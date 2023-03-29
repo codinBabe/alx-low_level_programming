@@ -1,3 +1,5 @@
 ### This is an introductory task to C 
 ---
-A script that runs a C file through preprocessor and save result to another file.
+- [0-preprocessor] (https://github.com/codinBabe/alx-low_level_programming/blob/master/0x00-hello_world/0-preprocessor)
+- [1-compiler] (https://github.com/codinBabe/alx-low_level_programming/blob/master/0x00-hello_world/1-compiler)
+

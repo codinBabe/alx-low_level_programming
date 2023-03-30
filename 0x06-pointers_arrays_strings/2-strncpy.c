@@ -1,17 +1,17 @@
 #include "main.h"
 char *_strncpy(char *dest, char *src, int n)
 {
-       char* a;
+       int i = 0;
 
-       a = dest;
-       while(*src && n--)
+       while(*src && n)
        {
-	       *dest = *src;
-	       dest++;
-	       src++;
+	       *(dest + i++) = *src++;
+	       --n;
        }
-       if (dest == 0 && src == 0)
-	       return (0);
-       *dest = '\0';
-       return (a);
+       while (n--)
+       {
+	       *(dest + i++) = '\0';
+       }
+
+       return (dest);
 }

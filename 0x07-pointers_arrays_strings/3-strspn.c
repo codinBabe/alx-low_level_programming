@@ -1,6 +1,12 @@
 #include "main.h"
-char*_strchr(char *s, char c);
-
+char *_strchr(char *s, char c);
+/**
+ * _strspn - This function gets the length of a prefix substring
+ * @s:string to be scanned
+ * @accept:string containing char to match
+ *
+ * Return: number of char in s consisting char from accept
+ */
 unsigned int _strspn(char *s, char *accept)
 {
 	unsigned int i = 0;
@@ -22,16 +28,16 @@ unsigned int _strspn(char *s, char *accept)
  */
 char *_strchr(char *s, char c)
 {
-        while (*s)
-        {
-                if (*s != c)
-                        s++;
-                else
-                        return (s);
-        }
-                if (c == '\0')
-                {
-                        return (s);
-                }
-        return (NULL);
+	while (*s)
+	{
+		if (*s != c)
+			s++;
+		else
+			return (s);
+	}
+	if (c == '\0')
+	{
+		return (s);
+	}
+	return (NULL);
 }

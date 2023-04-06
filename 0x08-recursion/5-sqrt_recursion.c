@@ -21,7 +21,7 @@ int checknum(int x, int y)
 /**
  * _sqrt_recursion - This function print natural square root of a number
  * @n: integer to be tested
- * 
+ *
  * Return: natural square root or -1
  */
 int _sqrt_recursion(int n)

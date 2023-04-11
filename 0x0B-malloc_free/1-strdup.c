@@ -53,7 +53,7 @@ char *_strcpy(char *dest, char *src)
 char *_strdup(char *str)
 {
 	unsigned int i = _strlen(str);
-	char *a = (char *) malloc(i * sizeof(a) + 1);
+	char *a = (char *) malloc(i * sizeof(*a) + 1);
 
 	if (str == NULL)
 	{

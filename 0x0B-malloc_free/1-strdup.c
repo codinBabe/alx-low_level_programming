@@ -1,50 +1,5 @@
 #include "main.h"
 /**
- * _strlen - This function return length of string
- * @s: the char to be tested
- *
- * Return: The string length
- */
-int _strlen(char *s)
-{
-	int i, length;
-
-	length = 0;
-
-	for (i = 0; s[i] != '\0'; i++)
-	{
-		length++;
-	}
-	return (length);
-}
-/**
- *_strcpy - This function copies the string pointed to by src,
- * including the terminating null byte (\0), to the buffer pointed to by dest.
- * @dest: character 1
- * @src: character 2
- *
- * Return: pointer to dest
- */
-char *_strcpy(char *dest, char *src)
-{
-	int len, i;
-
-	len = 0;
-
-	while (src[len] != '\0')
-	{
-		len++;
-	}
-
-	for (i = 0; i < len; i++)
-	{
-		dest[i] = src[i];
-	}
-	dest[i] = '\0';
-
-	return (dest);
-}
-/**
  * _strdup - This function returns a pointer to a newly allocated space
  *  in memory, which contains a copy of the string given as a parameter.
  *  @str:the string to be copied
@@ -52,18 +7,23 @@ char *_strcpy(char *dest, char *src)
  */
 char *_strdup(char *str)
 {
-	unsigned int i = _strlen(str);
-	char *a = (char *) malloc((sizeof(char) * i) + 1);
+	int len = 0;
+	int i;
+	char *copy;
 
 	if (str == NULL)
-	{
-		return (NULL);
-	}
-	if (a == NULL)
-	{
-		return (NULL);
-	}
-	_strcpy(a, str);
-	return (a);
+		return NULL;
+	
+	while (str[len] != '\0')
+		len++;
+	
+	copy = malloc(sizeof(char) * (len + 1));
+	if (copy == NULL)
+		return NULL;
+	
+	for (i = 0; i <= len; i++)
+		copy[i] = str[i];
+	
+	return copy;
 
 }

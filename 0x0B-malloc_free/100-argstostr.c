@@ -47,7 +47,7 @@ char *_strcpy(char *dest, char *src)
 /**
  * argstostr - This function concatenate all arguments
  * @ac:argument count
- * @av:pointer to argument variable
+ * @av:argument vector array
  * Return:on Success pointer to concatenated string, on error NULL.
  */
 char *argstostr(int ac, char **av)

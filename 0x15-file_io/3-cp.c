@@ -28,6 +28,7 @@ int main(int argc, char *argv[])
 		if (dest_fd < 0 || write(dest_fd, buffer, bytes) != bytes)
 		{
 			dprintf(STDERR_FILENO, "Error: Can't write to file %s\n", argv[2]);
+			close(fd);
 			exit(99);
 		}
 	}

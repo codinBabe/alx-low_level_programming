@@ -27,7 +27,7 @@ int main(int argc, char *argv[])
 	{
 		if (dest_fd < 0 || write(dest_fd, buffer, bytes) != bytes)
 		{
-			dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", argv[2]);
+			dprintf(STDERR_FILENO, "Error: Can't write to file %s\n", argv[2]);
 			exit(99);
 		}
 	}
@@ -41,9 +41,9 @@ int main(int argc, char *argv[])
 	if (src_fd < 0 || close_dest < 0)
 	{
 		if (src_fd < 0)
-			dprintf(STDERR_FILENO, "Error: Can't read from file %d\n", fd);
+			dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", fd);
 		if (close_dest < 0)
-			dprintf(STDERR_FILENO, "Error: Can't read from file %d\n", dest_fd);
+			dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", dest_fd);
 		exit(100);
 	}
 	return (0);

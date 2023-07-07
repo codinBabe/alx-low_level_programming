@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- *sqrt_ roots - This function check for square roots
+ *sqrt_roots - This function check for square roots
  * @a: number 1
  * @b: number 2
  * Return: zero on success.
@@ -15,9 +15,9 @@ int sqrt_roots(int a, int b)
 		return (sqrt_roots(a + 1, b));
 }
 /**
- * _sqrt_recursion - This function return the natural square root of a number.
+ *_sqrt_recursion - This function return the natural square root of a number.
  * @n: the number
- * Return : zero on success
+ * Return: zero on success
  */
 int _sqrt_recursion(int n)
 {

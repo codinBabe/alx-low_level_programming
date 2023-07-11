@@ -34,7 +34,7 @@ char *argstostr(int ac, char **av)
 		return (NULL);
 	for (i = 0; i < ac; i++)
 	{
-		if (av != NULL)
+		if (av[i] != NULL)
 			len = _strlen(av[i]);
 		sum += len;
 	}

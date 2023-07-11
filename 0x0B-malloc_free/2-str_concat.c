@@ -25,15 +25,18 @@ int _strlen(char *s)
  */
 char *str_concat(char *s1, char *s2)
 {
-	int a;
-	int b;
+	int a = 0;
+	int b = 0;
 	int total_len;
 	char *c;
 	int i;
 	int j;
 
-	a = _strlen(s1);
-	b = _strlen(s2);
+	if (s1 != NULL)
+		a = _strlen(s1);
+	if (s2 != NULL)
+		b = _strlen(s2);
+
 	total_len = a + b;
 	c = (char *)malloc((total_len + 1) * sizeof(char));
 

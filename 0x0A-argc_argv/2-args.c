@@ -1,7 +1,7 @@
 #include "main.h"
 /**
  * main - This program prints all arguments it receives.
- * @argc:argument count(unused)
+ * @argc:argument count
  * @argv:argumet vector
  * Return: zero on success
  */

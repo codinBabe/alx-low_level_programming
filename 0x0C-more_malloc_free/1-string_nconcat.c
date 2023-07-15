@@ -21,9 +21,9 @@ int _strlen(char *s)
  *@s1:source string
  *@s2:dest string
  *@n:string length
- *Return:
+ *Return:pointer to concatenated string
  */
- char *string_nconcat(char *s1, char *s2, unsigned int n)
+char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
 	unsigned int a, b, i, j;
 	char *ptr;
@@ -39,7 +39,7 @@ int _strlen(char *s)
 	if (n >= b)
 		n = b;
 
-	ptr = malloc(sizeof(char) *(a + n + 1));
+	ptr = malloc(sizeof(char) * (a + n + 1));
 	if (ptr == NULL)
 		return (NULL);
 

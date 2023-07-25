@@ -1,4 +1,5 @@
 #include "3-calc.h"
+#include "function_pointers.h"
 /**
  * main - entry point
  * @argc: argument count

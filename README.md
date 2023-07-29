@@ -1,4 +1,4 @@
-# This is my first C programming task
+# These are my first C programming tasks
 ---
 - [0x00-hello_world](https://github.com/codinBabe/alx-low_level_programming/tree/master/0x00-hello_world)
 - [0x01-variables_if_else_while](https://github.com/codinBabe/alx-low_level_programming/tree/master/0x01-variables_if_else_while)

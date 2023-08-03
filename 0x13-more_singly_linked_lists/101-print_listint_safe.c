@@ -12,7 +12,7 @@ const listint_t **reallocate(const listint_t **l, size_t s, const listint_t *n)
 	const listint_t **newlist;
 	size_t i;
 
-	newlist = malloc(sizeof(listint_t) * s);
+	newlist = malloc(sizeof(listint_t *) * s);
 	if (newlist == NULL)
 	{
 		free(l);

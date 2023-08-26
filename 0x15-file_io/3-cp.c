@@ -9,7 +9,7 @@ int main(int argc, char *argv[])
 {
 	int fd_from, fd_to;
 	char *buffer;
-	ssize_t R, W;
+	int R, W;
 
 	if (argc != 3)
 	{

@@ -1,5 +1,9 @@
 #include "hash_tables.h"
 /**
+ * hash_table_get - a function that retrieves a value associated with a key.
+ * @ht: hash table
+ * @key: key
+ * Return: Null
  */
 char *hash_table_get(const hash_table_t *ht, const char *key)
 {
@@ -8,7 +12,7 @@ char *hash_table_get(const hash_table_t *ht, const char *key)
 
 	while (tab != NULL)
 	{
-		if(strcmp(tab->key, key) == 0)
+		if (strcmp(tab->key, key) == 0)
 			return (tab->value);
 		tab = tab->next;
 	}

@@ -1,5 +1,5 @@
 #ifndef SEARCH_ALGOS_H
-#define
+#define SEARCH_ALOGS_H
 
 #include <stdio.h>
 #include <stdlib.h>
